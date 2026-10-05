@@ -21,6 +21,7 @@ namespace Pedros_Cantina.Model
 
 		public PedrosDbConnection() 
 		{
+
 		}
 
 		public void ConnectToDB()
