@@ -19,7 +19,7 @@ Console.WriteLine(Repo.GetEmp(1));
 
 Console.WriteLine();
 Console.WriteLine("Removing a specifc employee from the database");
-//Console.WriteLine(Repo.DeleteEmp(10)); -- Uncommented since this will throw an exception if the employee does not exist in the database.
+Console.WriteLine(Repo.DeleteEmp(10)); 
 
 Console.WriteLine();
 Console.WriteLine("Updating an employee in the database");
@@ -34,4 +34,4 @@ Employee updatedEmp = new Employee
 	Role = "Admin"
 };
 
-//Console.WriteLine(Repo.UpdateEmp(1, updatedEmp)); --Uncommented since if i do this, i cant run the program multiple times without getting an exception.
+Console.WriteLine(Repo.UpdateEmp(1, updatedEmp)); 
