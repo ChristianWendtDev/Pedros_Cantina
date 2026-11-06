@@ -87,7 +87,7 @@ namespace Pedros_Cantina.Model
 		public Employee GetEmp(int id)
 		{
 			db.ConnectToDB();
-			string sql = $"SELECT * FROM Employees WHERE EmployeeId = {id}";
+			string sql = $"SELECT * FROM Employees WHERE EmployeeId = {id}"; // burde være @EmployeeId
 
 			SqlCommand cmd = new SqlCommand(sql, db.Connection);
 
