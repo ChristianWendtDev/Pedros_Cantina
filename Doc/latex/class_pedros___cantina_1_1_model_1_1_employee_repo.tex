@@ -1,0 +1,176 @@
+\doxysection{Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo Class Reference}
+\hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo}{}\label{class_pedros___cantina_1_1_model_1_1_employee_repo}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+
+
+Defines \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class, which provides methods for interacting with the \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} table in the database.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_a40b9457388ff3e4b8cb224bd8ec1e191}\label{class_pedros___cantina_1_1_model_1_1_employee_repo_a40b9457388ff3e4b8cb224bd8ec1e191} 
+{\bfseries Employee\+Repo} ()
+\begin{DoxyCompactList}\small\item\em Defines the default constructor for the \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class, which initializes the list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects and creates a new \doxylink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection} object for connecting to the database. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_ae0f96c671cc520fa1159752eb70e7f7c}{Employee\+Repo}} (List$<$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} $>$ employees, \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection}} dB)
+\begin{DoxyCompactList}\small\item\em Defines a constructor for the \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class that takes in a list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects and a \doxylink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection} object for connecting to the database, and initializes the corresponding properties accordingly. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_a3f6ab7a1ed37c9e3fad119d859a47d60}{Create\+Employee}} (\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} employee)
+\begin{DoxyCompactList}\small\item\em Defines a method that creates a new \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object in the database by executing an SQL INSERT statement, and returns the created \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} $>$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_a74688233ed4de01723ae5fa9aca96c06}{Read\+All\+Emp}} ()
+\begin{DoxyCompactList}\small\item\em Define a method that reads all \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects from the database by executing an SQL SELECT statement, and returns a list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_aa06f1348134b92ea92f87dd6647bd56f}{Get\+Emp}} (int id)
+\begin{DoxyCompactList}\small\item\em Defines a method that retrieves a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object from the database by executing an SQL SELECT statement with a WHERE clause, and returns the retrieved \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_aac5596f2730948ee355b749912a39cab}{Update\+Emp}} (int id, \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} Updatedemployee)
+\begin{DoxyCompactList}\small\item\em Defines a method that updates a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object in the database by executing an SQL UPDATE statement with a WHERE clause, and returns the updated \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee_repo_a598957490e64e3d697be63ebf39a1759}{Delete\+Emp}} (int id\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em Defines a method that deletes a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object from the database by executing an SQL DELETE statement with a WHERE clause, and returns the deleted \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_aedbfac15bae67e7371f52524cc64e214}\label{class_pedros___cantina_1_1_model_1_1_employee_repo_aedbfac15bae67e7371f52524cc64e214} 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection}} {\bfseries db}\hspace{0.3cm}{\ttfamily  \+[get, set]}
+\item 
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_a24ce1dede48e3750b7048979488c1208}\label{class_pedros___cantina_1_1_model_1_1_employee_repo_a24ce1dede48e3750b7048979488c1208} 
+List$<$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} $>$ {\bfseries Employees}\hspace{0.3cm}{\ttfamily  \+[get, set]}
+\begin{DoxyCompactList}\small\item\em defines the Employees property, which gets or sets the list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects in the \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class, which provides methods for interacting with the \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} table in the database. 
+
+\label{class_pedros___cantina_1_1_model_1_1_employee_repo_doc-constructors}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_ae0f96c671cc520fa1159752eb70e7f7c}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!EmployeeRepo@{EmployeeRepo}}
+\index{EmployeeRepo@{EmployeeRepo}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{EmployeeRepo()}{EmployeeRepo()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_ae0f96c671cc520fa1159752eb70e7f7c} 
+Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Employee\+Repo (\begin{DoxyParamCaption}\item[{List$<$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} $>$}]{employees}{, }\item[{\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection}}}]{dB}{}\end{DoxyParamCaption})}
+
+
+
+Defines a constructor for the \doxylink{class_pedros___cantina_1_1_model_1_1_employee_repo}{Employee\+Repo} class that takes in a list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects and a \doxylink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection} object for connecting to the database, and initializes the corresponding properties accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employees} & The list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects to initialize.\\
+\hline
+{\em dB} & The \doxylink{class_pedros___cantina_1_1_model_1_1_pedros_db_connection}{Pedros\+Db\+Connection} object to initialize.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_pedros___cantina_1_1_model_1_1_employee_repo_doc-func-members}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_a3f6ab7a1ed37c9e3fad119d859a47d60}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!CreateEmployee@{CreateEmployee}}
+\index{CreateEmployee@{CreateEmployee}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{CreateEmployee()}{CreateEmployee()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_a3f6ab7a1ed37c9e3fad119d859a47d60} 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Create\+Employee (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}}}]{employee}{}\end{DoxyParamCaption})}
+
+
+
+Defines a method that creates a new \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object in the database by executing an SQL INSERT statement, and returns the created \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & The \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object to create.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Thrown when the employee with \{employee.\+Employee\+Id\} is not found.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_a598957490e64e3d697be63ebf39a1759}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!DeleteEmp@{DeleteEmp}}
+\index{DeleteEmp@{DeleteEmp}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{DeleteEmp()}{DeleteEmp()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_a598957490e64e3d697be63ebf39a1759} 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Delete\+Emp (\begin{DoxyParamCaption}\item[{int}]{id\+To\+Remove}{}\end{DoxyParamCaption})}
+
+
+
+Defines a method that deletes a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object from the database by executing an SQL DELETE statement with a WHERE clause, and returns the deleted \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+To\+Remove} & The ID of the employee to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The deleted \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Thrown when the employee with the specified ID is not found.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_aa06f1348134b92ea92f87dd6647bd56f}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!GetEmp@{GetEmp}}
+\index{GetEmp@{GetEmp}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{GetEmp()}{GetEmp()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_aa06f1348134b92ea92f87dd6647bd56f} 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Get\+Emp (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Defines a method that retrieves a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object from the database by executing an SQL SELECT statement with a WHERE clause, and returns the retrieved \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retrieved \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Thrown when the employee with the specified ID is not found.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_a74688233ed4de01723ae5fa9aca96c06}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!ReadAllEmp@{ReadAllEmp}}
+\index{ReadAllEmp@{ReadAllEmp}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{ReadAllEmp()}{ReadAllEmp()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_a74688233ed4de01723ae5fa9aca96c06} 
+List$<$ \doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} $>$ Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Read\+All\+Emp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Define a method that reads all \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects from the database by executing an SQL SELECT statement, and returns a list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects. 
+
+\begin{DoxyReturn}{Returns}
+A list of \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} objects.
+\end{DoxyReturn}
+\Hypertarget{class_pedros___cantina_1_1_model_1_1_employee_repo_aac5596f2730948ee355b749912a39cab}\index{Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}!UpdateEmp@{UpdateEmp}}
+\index{UpdateEmp@{UpdateEmp}!Pedros\_Cantina.Model.EmployeeRepo@{Pedros\_Cantina.Model.EmployeeRepo}}
+\doxysubsubsection{\texorpdfstring{UpdateEmp()}{UpdateEmp()}}
+{\footnotesize\ttfamily \label{class_pedros___cantina_1_1_model_1_1_employee_repo_aac5596f2730948ee355b749912a39cab} 
+\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}} Pedros\+\_\+\+Cantina.\+Model.\+Employee\+Repo.\+Update\+Emp (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{\doxymbox{\hyperlink{class_pedros___cantina_1_1_model_1_1_employee}{Employee}}}]{Updatedemployee}{}\end{DoxyParamCaption})}
+
+
+
+Defines a method that updates a specific \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object in the database by executing an SQL UPDATE statement with a WHERE clause, and returns the updated \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee to update.\\
+\hline
+{\em Updatedemployee} & The updated \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated \doxylink{class_pedros___cantina_1_1_model_1_1_employee}{Employee} object.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Key\+Not\+Found\+Exception} & Thrown when the employee with the specified ID is not found.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+Christian/\+source/\+repos/\+2. semester/\+\+Pedros\+\_\+\+Cantina/\+\+Pedros\+\_\+\+Cantina/\+\+Model/Employee\+Repo.\+cs\end{DoxyCompactItemize}

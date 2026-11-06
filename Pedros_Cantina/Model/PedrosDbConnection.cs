@@ -10,6 +10,9 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Pedros_Cantina.Model
 {
+	/// <summary>
+	/// Defines the PedrosDbConnection class, which provides methods for connecting to and disconnecting from the database.
+	/// </summary>
 	public class PedrosDbConnection
 	{
 		SqlConnection _conn;
@@ -24,6 +27,9 @@ namespace Pedros_Cantina.Model
 
 		}
 
+		/// <summary>
+		/// Defines the ConnectToDB method, which connects to the database using a connection string stored in user secrets, and opens the connection.
+		/// </summary>
 		public void ConnectToDB()
 		{
 			//string ConnString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Pedros_Cantina;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30";
@@ -37,6 +43,10 @@ namespace Pedros_Cantina.Model
 			_conn.Open();
 					}
 
+
+		/// <summary>
+		/// Defines the DisconnectFromDB method, which closes the connection to the database.
+		/// </summary>
 		public void DisconnectFromDB()
 		{
 			_conn.Close();
